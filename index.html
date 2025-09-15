@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-Landing-Page</title>
+     <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div class="background-elements"></div>
+  <nav>
+    <div class="nav-logo">NAJMI |==> DEV </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">About</a>
+      <a href="#">Pricing</a>
+      <a href="#">Blog</a>
+    </div>
+    <button class="nav-contact">Contact us</button>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  
+  <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="close-btn" onclick="toggleMenu()">
+      <i class="fas fa-times"></i>
+    </div>
+    <a href="#" onclick="toggleMenu()">Home</a>
+      <a href="#" onclick="toggleMenu()">Features</a>
+      <a href="#" onclick="toggleMenu()">About</a>
+      <a href="#" onclick="toggleMenu()">Pricing</a>
+      <a href="#" onclick="toggleMenu()">Blog</a>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <h1>Bring Your Ideas to Life</h1>
+      <p>
+        This is your space to describe your product, service, or idea. The 3D scene
+        on the right enhances visual engagement and interactivity with a modern purple neon aesthetic.
+      </p>
+      <div class="buttons">
+        <button>Get Started</button>
+        <button>Learn More</button>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="bg-main-container">
+      <div class="bg-main">
+            <spline-viewer url="https://prod.spline.design/BoWg-dch2T9e59sl/scene.splinecode"></spline-viewer>
+      </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
