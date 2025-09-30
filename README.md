@@ -19,13 +19,9 @@ The design is responsive, modern, and highlights a purple neon style.
 
 # Preview
 
-# Installation
+# Installatio
 
- Clone the repository:
-
- git clone https://github.com/your-username/repo-name.git
-
-
+# clone
 Open the project folder.
 
 Open index.html in your browser.
